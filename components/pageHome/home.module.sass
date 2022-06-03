@@ -1,0 +1,947 @@
+.visuallyHidden
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  border: 0
+  padding: 0
+  white-space: nowrap
+  clip-path: inset(100%)
+  clip: rect(0 0 0 0)
+  overflow: hidden
+
+.container
+  max-width: 1920px
+  margin: 0 auto
+
+// ----- Sticky header
+
+.headerWrapper
+  position: sticky
+  top: 0
+  background: rgba(255, 255, 255, 0.7)
+  backdrop-filter: blur(60px)
+  border-radius: 40px
+  z-index: 1
+
+.headerWrapper.blockWrapper
+  max-width: 1920px
+  padding: 40px 141px 46px 37px
+  display: flex
+  justify-content: space-between
+
+.mainNav__item a:hover
+  color: #84658D
+
+.blockWrapper
+  padding: 75px 30px
+  margin: 0 auto
+
+.logo,
+.connectButton,
+.mainNav__list
+  font-family: "Craftwork Grotesk", "Calibri", sans-serif
+  font-weight: 400
+  font-size: 28px
+  line-height: 34px
+  color: #84658D
+
+.mainNav__list
+  display: flex
+  padding-left: 288px
+
+  li
+    margin-right: 72px
+    font-weight: 400
+    font-size: 28px
+    line-height: 34px
+
+    &:last-child
+      margin-right: 0
+
+    a
+      color: #222020
+
+  span
+    background: #84658D
+    border-radius: 40px
+    color: white
+    font-size: 20px
+    line-height: 30px
+    padding: 2px 13px 8px 13px
+    margin-left: 3px
+    vertical-align: text-top
+
+@media (max-width: 1399px)
+  .headerWrapper.blockWrapper
+    padding-right: 46px
+
+  .mainNav__list
+    padding-left: 0
+
+@media (max-width: 1023px)
+  .mainNav__list li
+    margin-right: 35px
+    font-size: 22px
+
+  .logo,
+  .connectButton
+    font-size: 22px
+
+@media (max-width: 767px)
+  .headerWrapper
+    backdrop-filter: none
+    border-radius: 0
+    background: rgba(255, 255, 255, 1)
+
+  .headerWrapper.blockWrapper
+    padding: 40px 16px 46px 16px
+
+  .mainNav,
+  .connectButton
+    display: none
+
+@media (max-width: 499px)
+  .headerWrapper.blockWrapper
+    padding: 20px 16px
+
+  .logo
+    font-size: 16px
+    line-height: 20px
+
+// ----- Otherwordly good
+
+.mainScreen
+  position: relative
+
+  &::before
+    content: ""
+    position: absolute
+    top: 34px
+    left: 0
+    background: url('../../public/girl.png')
+    background-repeat: no-repeat
+    width: 100%
+    height: 100%
+    max-width: 1105px
+    max-height: 878px
+    background-size: contain
+
+  &::after
+    content: ""
+    position: absolute
+    top: 34px
+    left: 0
+    background: url('../../public/girl-bg.png')
+    background-repeat: no-repeat
+    width: 100%
+    height: 100%
+    max-width: 1105px
+    max-height: 878px
+    background-size: contain
+    z-index: -1
+
+.mainScreen__text
+  padding-top: 55px
+  padding-left: 20px
+  margin-left: 145px
+  margin-bottom: 353px
+  display: flex
+
+.mainScreen__title
+  max-width: 1376px
+  padding-left: 240px
+  text-align: right
+  font-family: "Craftwork Grotesk", "Calibri", sans-serif
+  font-weight: 400
+  font-size: 134px
+  line-height: 107%
+  text-transform: uppercase
+  color: #222020
+
+.mainScreen__description
+  max-width: 310px
+  text-align: left
+  font-weight: 400
+  font-size: 20px
+  line-height: 140%
+  letter-spacing: -0.01em
+  color: #222020
+  padding: 52px 0 0 20px
+  font-family: "Helvetica", sans-serif
+
+.togetherLink
+  display: block
+  font-family: "Craftwork Grotesk", "Calibri", sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 44px
+  line-height: 120%
+  color: #84658D
+  position: relative
+  width: fit-content
+  margin-left: auto
+  margin-right: 17.8%
+  margin-bottom: 138px
+
+  &::after
+    content: ""
+    position: absolute
+    top: -24px
+    right: -132px
+    width: 101px
+    height: 101px
+    background: url('../../public/together-icon.svg')
+
+  &:hover::after
+    background: url('../../public/together-icon-hover.svg')
+
+@media (max-width: 1839px)
+  .mainScreen__title
+    font-size: 127px
+
+@media (max-width: 1739px)
+  .mainScreen__text
+    flex-direction: column
+    align-items: flex-end
+
+  .mainScreen__description
+    text-align: right
+    max-width: 500px
+
+  .mainScreen::before,
+  .mainScreen::after
+    width: 82%
+    height: 82%
+
+  .togetherLink
+    font-size: 42px
+
+@media (max-width: 1539px)
+  .mainScreen .blockWrapper
+    padding-top: 35px
+
+  .mainScreen__title
+    font-size: 120px
+
+  .mainScreen__description
+    font-size: 18px
+
+  .togetherLink
+    margin-right: 130px
+
+@media (max-width: 1399px)
+  .mainScreen__text
+    padding-top: 0
+    margin-bottom: 580px
+
+  .mainScreen__title
+    font-size: 110px
+
+  .mainScreen::before,
+  .mainScreen::after
+    top: 160px
+
+@media (max-width: 1199px)
+  .mainScreen__text
+    margin-bottom: 500px
+
+@media (max-width: 1023px)
+  .mainScreen__text
+    margin-bottom: 450px
+
+  .mainScreen__title
+    font-size: 90px
+
+  .togetherLink
+    font-size: 30px
+
+    &:after
+      transform: scale(0.8)
+      top: -30px
+
+@media (max-width: 899px)
+  .mainScreen__text
+    margin-bottom: 420px
+
+  .mainScreen__title
+    font-size: 70px
+
+  .mainScreen__description
+    font-size: 16px
+    max-width: 454px
+
+@media (max-width: 767px)
+  .mainScreen__text
+    margin-left: 67px
+    margin-bottom: 293px
+
+  .mainScreen__title
+    font-size: 52px
+
+  .mainScreen__description
+    font-size: 14px
+    line-height: 20px
+    padding: 16px 0 0 0
+
+  .blockWrapper
+    padding-left: 16px
+    padding-right: 16px
+
+  .togetherLink
+    font-size: 18px
+    line-height: 22px
+    margin-right: 88px
+    margin-bottom: 0
+
+    &:after
+      transform: scale(0.55)
+      top: -40px
+      right: -86px
+
+@media (max-width: 499px)
+  .mainScreen:before,
+  .mainScreen:after
+    top: 191px
+    left: -54px
+    width: 114%
+    height: 114%
+
+  .mainScreen__title
+    font-size: 42px
+
+@media (max-width: 399px)
+  .mainScreen__title
+    font-size: 38px
+
+// ----- End-to-end development
+
+.development
+  position: relative
+
+.development:before
+  content: ''
+  position: absolute
+  top: -42px
+  right: 0
+  width: 100%
+  height: 100%
+  max-width: 1260px
+  max-height: 939px
+  background: url('../../public/cat.png')
+  background-repeat: no-repeat
+  background-size: contain
+  z-index: -1
+
+.infoBlockWrapper
+  margin: 0 auto
+  padding: 400px 30px 152px 30px
+
+.development__title
+  max-width: 1330px
+  font-family: "Craftwork Grotesk", "Calibri", sans-serif
+  font-weight: 400
+  line-height: 107%
+  font-size: 134px
+  text-transform: uppercase
+  color: #222020
+
+.development__description
+  max-width: 445px
+  padding-top: 137px
+  margin-right: 28px
+  font-family: "Helvetica", sans-serif
+  font-weight: 400
+  font-size: 20px
+  line-height: 28px
+  text-align: right
+  letter-spacing: -0.01em
+  color: #222020
+  order: -1
+
+.development__text
+  display: flex
+  padding-top: 169px
+  padding-left: 10px
+  margin-bottom: 71px
+
+.downLink
+  position: relative
+  display: block
+  margin-left: auto
+  width: fit-content
+  margin-right: 300px
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 30px
+    height: 44px
+    background: url('../../public/arrow-down-icon.svg')
+
+@media (max-width: 1839px)
+  .development__title
+    font-size: 127px
+
+@media (max-width: 1739px)
+  .development__text
+    flex-direction: column
+    align-items: flex-start
+
+  .development__description
+    text-align: left
+    padding-top: 120px
+    max-width: 500px
+    order: 0
+
+  .development::before
+    width: 82%
+    height: 82%
+
+@media (max-width: 1539px)
+  .development .infoBlockWrapper
+    padding-top: 35px
+
+  .development__text
+    align-items: flex-start
+    padding-top: 480px
+
+  .development__title
+    font-size: 120px
+
+  .development__description
+    font-size: 18px
+    padding-top: 110px
+
+  .downLink
+    display: none
+
+@media (max-width: 1399px)
+  .development__text
+    padding-top: 420px
+
+  .development__title
+    font-size: 110px
+
+  .development__description
+    padding-top: 100px
+
+@media (max-width: 1199px)
+  .development__text
+    padding-top: 350px
+
+  .development__title
+    font-size: 100px
+
+  .development__description
+    padding-top: 90px
+
+@media (max-width: 1023px)
+  .development__text
+    padding-top: 285px
+
+  .development__title
+    font-size: 90px
+
+  .development__description
+    padding-top: 80px
+
+@media (max-width: 899px)
+  .development__text
+    padding-top: 250px
+
+  .development__title
+    font-size: 70px
+
+  .development__description
+    font-size: 16px
+    max-width: 454px
+    padding-top: 70px
+
+@media (max-width: 767px)
+  .development
+    overflow: hidden
+
+  .development:before
+    background: url('../../public/cat-mobile.png')
+    background-repeat: no-repeat
+    top: 42px
+    right: -139px
+    width: 137%
+    background-size: contain
+    height: 137%
+    max-width: 513px
+    max-height: 351px
+
+  .development__text
+    padding-top: 200px
+    padding-left: 0
+
+  .development__title
+   font-size: 52px
+
+  .development__description
+    padding-top: 60px
+    font-size: 14px
+
+  .infoBlockWrapper
+    padding-left: 16px
+    padding-right: 16px
+
+@media (max-width: 499px)
+  .development__title
+    font-size: 42px
+
+@media (max-width: 399px)
+  .development__title
+    font-size: 38px
+
+// ----- Customer focus
+
+.customerFocus
+  position: relative
+
+.customerFocus__text
+  display: flex
+  padding-top: 169px
+  padding-left: 10px
+  margin-bottom: 71px
+
+.customerFocus__title
+  max-width: 1330px
+  font-family: "Craftwork Grotesk", "Calibri", sans-serif
+  font-weight: 400
+  line-height: 107%
+  font-size: 134px
+  text-transform: uppercase
+  color: #222020
+
+.customerFocus__description
+  max-width: 445px
+  padding-top: 137px
+  margin-right: 28px
+  font-family: "Helvetica", sans-serif
+  font-weight: 400
+  font-size: 20px
+  line-height: 28px
+  text-align: right
+  letter-spacing: -0.01em
+  color: #222020
+  order: -1
+
+.customerFocus:before
+  content: ''
+  position: absolute
+  top: 50px
+  right: 39px
+  width: 100%
+  height: 100%
+  background: url('../../public/owl.png')
+  background-repeat: no-repeat
+  background-size: contain
+  max-width: 1530px
+  max-height: 846px
+  z-index: -1
+
+.customerFocus .infoBlockWrapper
+  padding-bottom: 135px
+
+.customerFocus .downLink::before
+  top: -16px
+
+@media (max-width: 1839px)
+  .customerFocus__title
+    font-size: 127px
+
+@media (max-width: 1739px)
+  .customerFocus__text
+    flex-direction: column
+    align-items: flex-start
+
+  .customerFocus__title
+    max-width: 1000px
+
+  .customerFocus__description
+    text-align: left
+    max-width: 500px
+    order: 0
+    padding-top: 120px
+
+  .customerFocus::before
+    width: 82%
+    height: 82%
+
+@media (max-width: 1539px)
+  .customerFocus:before
+    top: 0
+
+  .customerFocus .infoBlockWrapper
+    padding-top: 35px
+
+  .customerFocus__text
+    align-items: flex-start
+    padding-top: 420px
+
+  .customerFocus__title
+    font-size: 120px
+
+  .customerFocus__description
+    font-size: 18px
+    padding-top: 110px
+
+@media (max-width: 1399px)
+  .customerFocus__title
+    font-size: 110px
+
+  .customerFocus__text
+    padding-top: 400px
+
+  .customerFocus__description
+    padding-top: 100px
+
+@media (max-width: 1199px)
+  .customerFocus__text
+    padding-top: 350px
+
+  .customerFocus__description
+    padding-top: 90px
+
+@media (max-width: 1023px)
+  .customerFocus__text
+    padding-top: 280px
+
+  .customerFocus__title
+    font-size: 90px
+    max-width: 650px
+
+    .customerFocus__description
+      padding-top: 80px
+
+@media (max-width: 899px)
+  .customerFocus__text
+    padding-top: 240px
+
+  .customerFocus__title
+    font-size: 70px
+
+  .customerFocus__description
+    font-size: 16px
+    max-width: 454px
+    padding-top: 70px
+
+@media (max-width: 767px)
+  .customerFocus__text
+    padding-top: 215px
+    padding-left: 0
+
+  .customerFocus__title
+    font-size: 52px
+
+  .customerFocus__description
+    padding-top: 60px
+    font-size: 14px
+
+@media (max-width: 499px)
+  .customerFocus__title
+    font-size: 42px
+
+@media (max-width: 399px)
+  .customerFocus__title
+    font-size: 38px
+
+// ----- Well-rounded team
+
+.team
+  position: relative
+
+.team:before
+  content: ''
+  position: absolute
+  top: 66px
+  right: 40px
+  width: 100%
+  height: 100%
+  background: url('../../public/raven.png')
+  background-repeat: no-repeat
+  background-size: contain
+  max-width: 1220px
+  max-height: 830px
+  z-index: -1
+
+.team .infoBlockWrapper
+  padding-top: 417px
+
+.team__text
+  padding-top: 8px
+  padding-left: 34px
+  display: flex
+  margin-bottom: 71px
+
+.team__title
+  max-width: 1000px
+  font-family: "Craftwork Grotesk", "Calibri", sans-serif
+  font-weight: 400
+  line-height: 107%
+  font-size: 134px
+  text-transform: uppercase
+  color: #222020
+
+.team__description
+  font-family: "Helvetica", sans-serif
+  font-weight: 400
+  font-size: 20px
+  line-height: 28px
+  text-align: right
+  letter-spacing: -0.01em
+  color: #222020
+  padding-top: 280px
+  max-width: 421px
+  padding-left: 34px
+  margin-right: 28px
+  order: -1
+
+.team .downLink::before
+  top: -15px
+
+@media (max-width: 1839px)
+  .team__title
+    font-size: 127px
+
+@media (max-width: 1739px)
+  .team__text
+    flex-direction: column
+    align-items: flex-start
+    padding-left: 10px
+
+  .team__title
+    max-width: 900px
+
+  .team__description
+    text-align: left
+    max-width: 500px
+    padding-left: 0
+    padding-top: 120px
+    order: 0
+
+  .team::before
+    width: 82%
+    height: 82%
+
+@media (max-width: 1539px)
+  .team::before
+    top: 0
+
+  .team .infoBlockWrapper
+    padding-top: 35px
+
+  .team__text
+    align-items: flex-start
+    padding-top: 330px
+
+  .team__title
+    font-size: 120px
+    max-width: 800px
+
+  .team__description
+    font-size: 18px
+    padding-top: 110px
+
+@media (max-width: 1399px)
+  .team__text
+    padding-top: 310px
+
+  .team__title
+    font-size: 110px
+
+  .team__description
+    padding-top: 100px
+
+@media (max-width: 1199px)
+  .team__text
+    padding-top: 250px
+
+  .team__description
+    padding-top: 90px
+
+@media (max-width: 1023px)
+  .team__text
+    padding-top: 210px
+
+  .team__title
+    font-size: 90px
+    max-width: 600px
+
+  .team__description
+    padding-top: 80px
+
+@media (max-width: 899px)
+  .team__text
+    font-size: 185px
+
+  .team__title
+    font-size: 70px
+
+  .team__description
+    font-size: 16px
+    max-width: 454px
+    padding-top: 70px
+
+@media (max-width: 767px)
+  .team__text
+    padding-top: 150px
+    padding-left: 0
+
+  .team__title
+    font-size: 52px
+    max-width: 340px
+
+  .team__description
+    padding-top: 60px
+    font-size: 14px
+
+@media (max-width: 499px)
+  .team__title
+    font-size: 42px
+
+@media (max-width: 399px)
+  .team__title
+    font-size: 38px
+
+// ----- Featured projects
+
+.featuredProjects
+  max-width: 1920px
+  padding: 124px 40px
+
+.featuredProjects .blockWrapper
+  padding: 42px 0 0
+
+.featuredProjects__text
+  padding-top: 0
+  justify-content: flex-end
+  padding-right: 20px
+  margin-bottom: 163px
+  position: relative
+  display: flex
+  padding-left: 10px
+
+  &::before
+    content: ''
+    position: absolute
+    top: 232px
+    left: 118px
+    background: url('../../public/droids.png')
+    background-repeat: no-repeat
+    width: 100%
+    height: 100%
+    max-width: 415px
+    max-height: 276px
+
+.featuredProjects__title
+  max-width: 1330px
+  font-family: "Craftwork Grotesk", "Calibri", sans-serif
+  font-weight: 400
+  line-height: 107%
+  font-size: 134px
+  text-transform: uppercase
+  color: #222020
+  text-align: right
+
+.featuredProjects__description
+  max-width: 445px
+  padding-top: 137px
+  margin-right: 28px
+  font-family: "Helvetica", sans-serif
+  font-weight: 400
+  font-size: 20px
+  line-height: 28px
+  text-align: right
+  letter-spacing: -0.01em
+  color: #222020
+  order: -1
+
+.featuredProjects__description
+  font-family: "Helvetica", sans-serif
+  font-weight: 400
+  font-size: 20px
+  line-height: 28px
+  letter-spacing: -0.01em
+  color: #222020
+  order: 1
+  max-width: 290px
+  text-align: left
+  padding-top: 163px
+  padding-left: 20px
+  padding-right: 5px
+  margin-right: 0
+
+.featuredProjects__cards
+  display: flex
+
+@media (max-width: 1839px)
+  .featuredProjects__title
+    font-size: 127px
+
+@media (max-width: 1739px)
+  .featuredProjects__text
+    flex-direction: column
+    align-items: flex-end
+
+  .featuredProjects__description
+    text-align: right
+    max-width: 500px
+
+  .featuredProjects::before
+    width: 82%
+    height: 82%
+
+@media (max-width: 1539px)
+  .featuredProjects .infoBlockWrapper
+    padding-top: 35px
+
+  .featuredProjects__title
+    font-size: 120px
+
+  .featuredProjects__description
+    font-size: 18px
+
+  .featuredProjects__cards
+    flex-wrap: wrap
+    justify-content: center
+
+@media (max-width: 1399px)
+  .featuredProjects__title
+    font-size: 110px
+
+@media (max-width: 1023px)
+  .featuredProjects__text:before
+    top: 175px
+    left: 0
+
+  .featuredProjects__title
+    font-size: 90px
+
+@media (max-width: 899px)
+  .featuredProjects__title
+    font-size: 70px
+
+  .featuredProjects__description
+    font-size: 16px
+    max-width: 454px
+
+@media (max-width: 767px)
+  .featuredProjects__title
+    font-size: 52px
+
+  .featuredProjects__description
+    font-size: 14px
+
+@media (max-width: 499px)
+  .featuredProjects__title
+    font-size: 42px
+
+@media (max-width: 399px)
+  .featuredProjects__title
+    font-size: 38px
