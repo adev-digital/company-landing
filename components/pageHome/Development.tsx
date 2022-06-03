@@ -4,7 +4,7 @@ import classNames from 'classnames'
 
 const Development = () => {
     return (
-        <section className={classNames(s.development, s.container)} id='targetDevelopment'>
+        <section className={classNames(s.development, s.container)} id='development'>
             <div className={s.infoBlockWrapper}>
                 <div className={s.development__text}>
                     <h2 className={s.development__title}>

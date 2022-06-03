@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './home.module.sass'
 import classNames from 'classnames'
-// import { HashLink } from 'react-router-hash-link'
+import Link from 'next/link'
 
 const StickyHeader = () => {
     return (
@@ -13,11 +13,10 @@ const StickyHeader = () => {
             <nav className={s.mainNav}>
                 <ul className={s.mainNav__list}>
                     <li className={s.mainNav__item}>
-                        {/*<HashLink to="${Development}#${development}">service</HashLink>*/}
-                        <a href="#">service</a>
+                        <Link href='#development'>service</Link>
                     </li>
                     <li className={s.mainNav__item}>
-                        <a href="#">projects</a>
+                        <Link href='#projects'>projects</Link>
                     </li>
                     <li className={s.mainNav__item}>
                         <a href="#">dao <span>soon</span></a>

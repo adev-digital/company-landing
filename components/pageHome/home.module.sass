@@ -219,12 +219,15 @@
   .togetherLink
     font-size: 42px
 
+  .mainScreen__title
+    font-size: 90px
+
 @media (max-width: 1539px)
   .mainScreen .blockWrapper
     padding-top: 35px
 
   .mainScreen__title
-    font-size: 120px
+    font-size: 80px
 
   .mainScreen__description
     font-size: 18px
@@ -238,7 +241,7 @@
     margin-bottom: 580px
 
   .mainScreen__title
-    font-size: 110px
+    font-size: 70px
 
   .mainScreen::before,
   .mainScreen::after
@@ -251,9 +254,16 @@
 @media (max-width: 1023px)
   .mainScreen__text
     margin-bottom: 450px
+    //align-items: center
 
   .mainScreen__title
-    font-size: 90px
+    font-size: 52px
+    max-width: 450px
+    padding-left: 0
+
+  .mainScreen__description
+    font-size: 16px
+    max-width: 270px
 
   .togetherLink
     font-size: 30px
@@ -267,11 +277,7 @@
     margin-bottom: 420px
 
   .mainScreen__title
-    font-size: 70px
-
-  .mainScreen__description
-    font-size: 16px
-    max-width: 454px
+    font-size: 50px
 
 @media (max-width: 767px)
   .mainScreen__text
@@ -279,7 +285,7 @@
     margin-bottom: 293px
 
   .mainScreen__title
-    font-size: 52px
+    font-size: 48px
 
   .mainScreen__description
     font-size: 14px
@@ -320,6 +326,7 @@
 
 .development
   position: relative
+  overflow: hidden
 
 .development:before
   content: ''
@@ -333,6 +340,7 @@
   background: url('../../public/cat.png')
   background-repeat: no-repeat
   background-size: contain
+  background-position: right
   z-index: -1
 
 .infoBlockWrapper
@@ -388,19 +396,29 @@
     font-size: 127px
 
 @media (max-width: 1739px)
+  //.development__text
+  //  flex-direction: column
+  //  align-items: flex-start
+
+  .development:before
+    top: 10px
+    right: 0
+    width: 75%
+    height: 75%
+
   .development__text
-    flex-direction: column
-    align-items: flex-start
+    margin-bottom: 110px
+    padding-top: 110px
+
+  .development__title
+    font-size: 90px
+    max-width: 800px
 
   .development__description
-    text-align: left
-    padding-top: 120px
+    //text-align: left
+    padding-top: 47px
     max-width: 500px
-    order: 0
-
-  .development::before
-    width: 82%
-    height: 82%
+    //order: 0
 
 @media (max-width: 1539px)
   .development .infoBlockWrapper
@@ -411,7 +429,7 @@
     padding-top: 480px
 
   .development__title
-    font-size: 120px
+    font-size: 80px
 
   .development__description
     font-size: 18px
@@ -425,7 +443,7 @@
     padding-top: 420px
 
   .development__title
-    font-size: 110px
+    font-size: 70px
 
   .development__description
     padding-top: 100px
@@ -434,38 +452,33 @@
   .development__text
     padding-top: 350px
 
-  .development__title
-    font-size: 100px
-
   .development__description
     padding-top: 90px
+    font-size: 16px
+    max-width: 270px
 
 @media (max-width: 1023px)
   .development__text
     padding-top: 285px
+    align-items: center
 
   .development__title
-    font-size: 90px
+    font-size: 52px
+    max-width: 450px
 
   .development__description
     padding-top: 80px
+    font-size: 16px
+    max-width: 270px
 
 @media (max-width: 899px)
   .development__text
     padding-top: 250px
 
   .development__title
-    font-size: 70px
-
-  .development__description
-    font-size: 16px
-    max-width: 454px
-    padding-top: 70px
+    font-size: 50px
 
 @media (max-width: 767px)
-  .development
-    overflow: hidden
-
   .development:before
     background: url('../../public/cat-mobile.png')
     background-repeat: no-repeat
@@ -482,7 +495,7 @@
     padding-left: 0
 
   .development__title
-   font-size: 52px
+   font-size: 48px
 
   .development__description
     padding-top: 60px
@@ -510,6 +523,7 @@
 
 .customerFocus
   position: relative
+  overflow: hidden
 
 .customerFocus__text
   display: flex
@@ -543,12 +557,13 @@
   content: ''
   position: absolute
   top: 50px
-  right: 39px
+  right: 30px
   width: 100%
   height: 100%
   background: url('../../public/owl.png')
   background-repeat: no-repeat
   background-size: contain
+  background-position: right
   max-width: 1530px
   max-height: 846px
   z-index: -1
@@ -565,21 +580,25 @@
 
 @media (max-width: 1739px)
   .customerFocus__text
-    flex-direction: column
-    align-items: flex-start
+    padding-top: 70px
+    margin-bottom: 110px
+  //  flex-direction: column
+  //  align-items: flex-start
+
+  .customerFocus:before
+    top: 10px
+    width: 75%
+    height: 75%
 
   .customerFocus__title
-    max-width: 1000px
+    max-width: 800px
+    font-size: 90px
 
   .customerFocus__description
-    text-align: left
+    //text-align: left
     max-width: 500px
-    order: 0
-    padding-top: 120px
-
-  .customerFocus::before
-    width: 82%
-    height: 82%
+    //order: 0
+    padding-top: 47px
 
 @media (max-width: 1539px)
   .customerFocus:before
@@ -593,7 +612,7 @@
     padding-top: 420px
 
   .customerFocus__title
-    font-size: 120px
+    font-size: 80px
 
   .customerFocus__description
     font-size: 18px
@@ -601,7 +620,7 @@
 
 @media (max-width: 1399px)
   .customerFocus__title
-    font-size: 110px
+    font-size: 70px
 
   .customerFocus__text
     padding-top: 400px
@@ -619,30 +638,25 @@
 @media (max-width: 1023px)
   .customerFocus__text
     padding-top: 280px
+    align-items: center
 
   .customerFocus__title
-    font-size: 90px
-    max-width: 650px
+    font-size: 52px
+    max-width: 450px
 
-    .customerFocus__description
-      padding-top: 80px
+  .customerFocus__description
+    padding-top: 80px
+    font-size: 16px
+    max-width: 270px
 
 @media (max-width: 899px)
   .customerFocus__text
     padding-top: 240px
 
   .customerFocus__title
-    font-size: 70px
-
-  .customerFocus__description
-    font-size: 16px
-    max-width: 454px
-    padding-top: 70px
+    font-size: 50px
 
 @media (max-width: 767px)
-  .customerFocus
-    overflow: hidden
-
   .customerFocus:before
     background: url('../../public/owl-mobile.png')
     background-repeat: no-repeat
@@ -658,7 +672,7 @@
     padding-left: 0
 
   .customerFocus__title
-    font-size: 52px
+    font-size: 48px
 
   .customerFocus__description
     padding-top: 6px
@@ -681,17 +695,19 @@
 
 .team
   position: relative
+  overflow: hidden
 
 .team:before
   content: ''
   position: absolute
-  top: 66px
-  right: 40px
+  top: 0
+  right: 30px
   width: 100%
   height: 100%
   background: url('../../public/raven.png')
   background-repeat: no-repeat
   background-size: contain
+  background-position: right
   max-width: 1220px
   max-height: 830px
   z-index: -1
@@ -736,20 +752,21 @@
     font-size: 127px
 
 @media (max-width: 1739px)
-  .team__text
-    flex-direction: column
-    align-items: flex-start
-    padding-left: 10px
+  //.team__text
+  //  flex-direction: column
+  //  align-items: flex-start
+  //  padding-left: 10px
 
   .team__title
-    max-width: 900px
+    max-width: 700px
+    font-size: 90px
 
   .team__description
-    text-align: left
+    //text-align: left
     max-width: 500px
     padding-left: 0
     padding-top: 120px
-    order: 0
+    //order: 0
 
   .team::before
     width: 82%
@@ -767,8 +784,8 @@
     padding-top: 330px
 
   .team__title
-    font-size: 120px
-    max-width: 800px
+    font-size: 80px
+    max-width: 500px
 
   .team__description
     font-size: 18px
@@ -779,7 +796,7 @@
     padding-top: 310px
 
   .team__title
-    font-size: 110px
+    font-size: 70px
 
   .team__description
     padding-top: 100px
@@ -794,30 +811,25 @@
 @media (max-width: 1023px)
   .team__text
     padding-top: 210px
+    align-items: center
 
   .team__title
-    font-size: 90px
-    max-width: 600px
+    font-size: 52px
+    max-width: 450px
 
   .team__description
     padding-top: 80px
+    font-size: 16px
+    max-width: 270px
 
 @media (max-width: 899px)
   .team__text
-    font-size: 185px
+    padding-top: 185px
 
   .team__title
-    font-size: 70px
-
-  .team__description
-    font-size: 16px
-    max-width: 454px
-    padding-top: 70px
+    font-size: 50px
 
 @media (max-width: 767px)
-  .team
-    overflow: hidden
-
   .team:before
     background: url('../../public/raven-mobile.png')
     background-repeat: no-repeat
@@ -833,7 +845,7 @@
     padding-left: 0
 
   .team__title
-    font-size: 52px
+    font-size: 48px
     max-width: 331px
 
   .team__description
@@ -855,6 +867,7 @@
 .featuredProjects
   max-width: 1920px
   padding: 124px 40px
+  overflow: hidden
 
 .featuredProjects .blockWrapper
   padding: 42px 0 0
@@ -927,11 +940,15 @@
 
 @media (max-width: 1739px)
   .featuredProjects__text
-    flex-direction: column
-    align-items: flex-end
+    //flex-direction: column
+    //align-items: flex-end
+
+  .featuredProjects__title
+    font-size: 90px
+    max-width: 800px
 
   .featuredProjects__description
-    text-align: right
+    //text-align: right
     max-width: 500px
 
   .featuredProjects::before
@@ -943,7 +960,7 @@
     padding-top: 35px
 
   .featuredProjects__title
-    font-size: 120px
+    font-size: 80px
 
   .featuredProjects__description
     font-size: 18px
@@ -954,29 +971,33 @@
 
 @media (max-width: 1399px)
   .featuredProjects__title
-    font-size: 110px
+    font-size: 70px
 
 @media (max-width: 1023px)
+  .featuredProjects__text
+    align-items: center
+
   .featuredProjects__text:before
     top: 175px
     left: 0
 
   .featuredProjects__title
-    font-size: 90px
-
-@media (max-width: 899px)
-  .featuredProjects__title
-    font-size: 70px
+    font-size: 52px
+    max-width: 450px
 
   .featuredProjects__description
     font-size: 16px
-    max-width: 454px
+    max-width: 270px
+
+@media (max-width: 899px)
+  .featuredProjects__title
+    font-size: 50px
 
 @media (max-width: 767px)
   .featuredProjects
     padding-left: 16px
     padding-right: 16px
-    padding-top: 42px
+    padding-top: 52px
 
   .featuredProjects__text
     padding-right: 0
@@ -994,7 +1015,7 @@
     left: -5px
 
   .featuredProjects__title
-    font-size: 52px
+    font-size: 48px
 
   .featuredProjects__description
     font-size: 14px

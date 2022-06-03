@@ -5,7 +5,7 @@ import FeaturedCard from '../FeaturedCard'
 
 const FeaturedProjects = () => {
     return (
-        <section className={classNames(s.featuredProjects, s.container)}>
+        <section className={classNames(s.featuredProjects, s.container)} id='projects'>
             <div className={s.blockWrapper}>
                 <div className={s.featuredProjects__text}>
                     <h2 className={s.featuredProjects__title}>

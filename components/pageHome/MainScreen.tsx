@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './home.module.sass'
 import classNames from 'classnames'
+import Link from "next/link"
 
 const MainScreen = () => {
     return (
@@ -18,7 +19,7 @@ const MainScreen = () => {
                         project from scratch to the stars.
                     </p>
                 </div>
-                <a className={s.togetherLink} href="#">let&lsquo;s build together</a>
+                <Link href="#development"><a className={s.togetherLink}>let&lsquo;s build together</a></Link>
             </div>
         </section>
     )
