@@ -11,7 +11,7 @@ const MainScreen = () => {
                         Otherworldly <b>good</b>
                     </h2>
                     <p className={s.mainScreen__description}>
-                        <b>Kollab</b> is <s>another</s> another level blockchain
+                        <b>ANOTHER.DEV</b> is <s>another</s> another level blockchain
                         development studio with deep expertise in technology and
                         design/art. Summon an experienced international
                         full-stack multidisciplinary team to push your custom

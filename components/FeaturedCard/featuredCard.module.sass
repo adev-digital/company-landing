@@ -20,6 +20,7 @@
   text-transform: uppercase
   color: #222020
   margin-bottom: 40px
+  text-align: center
 
 .featuredCard__description
   font-family: 'Helvetica', sans-serif
@@ -71,3 +72,46 @@
   .featuredCard
     margin-right: 0
     margin-bottom: 24px
+    padding: 110px 90px
+
+@media (max-width: 1399px)
+  .featuredCard
+    padding: 100px 80px
+
+  .featuredCard__heading
+    font-size: 52px
+
+  .featuredCard__description
+    font-size: 24px
+
+@media (max-width: 1023px)
+  .featuredCard__heading
+    font-size: 42px
+
+  .featuredCard__description
+    font-size: 20px
+
+@media (max-width: 767px)
+  .featuredCard
+    padding: 32px 24px
+    border-radius: 34px
+    margin-bottom: 6px
+
+  .featuredCard__heading
+    font-size: 28px
+    line-height: 34px
+    margin-bottom: 17px
+
+  .featuredCard__description
+    font-size: 16px
+    line-height: 22px
+    margin-bottom: 17px
+
+  .tag
+    font-size: 16px
+    line-height: 22px
+    margin-right: 24px
+
+    &::before
+      top: -2px
+      right: -16px

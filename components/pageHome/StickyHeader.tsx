@@ -9,7 +9,7 @@ const StickyHeader = () => {
             <h1 className={s.visuallyHidden}>
                 NFT & blockchain projects development team
             </h1>
-            <a className={s.logo} href="#">– kollab</a>
+            <a className={s.logo} href="#">– ANOTHER.DEV</a>
             <nav className={s.mainNav}>
                 <ul className={s.mainNav__list}>
                     <li className={s.mainNav__item}>
@@ -24,7 +24,7 @@ const StickyHeader = () => {
                     </li>
                 </ul>
             </nav>
-            <button className={s.connectButton} type="button">connect wallet</button>
+            {/*<button className={s.connectButton} type="button">connect wallet</button>*/}
         </div>
     )
 }

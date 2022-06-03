@@ -19,16 +19,16 @@ const FeaturedProjects = () => {
             </div>
             <div className={s.featuredProjects__cards}>
                 <FeaturedCard
-                    headingBold="Pocmon "
-                    heading="ecosystem"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-                    tags={['NFT', 'Smartcontracts']}
+                    headingBold="Morpheus"
+                    heading=""
+                    description="Long term immersive NFT project, developed from scratch to final product. Deep lore and specific artstyle wrapped in original communicative strategy with ARG-elements and &#8220;choose your adventure&#8221; kinda vibe. "
+                    tags={['NFT', 'Smartcontracts', 'Full cycle', 'Marketing']}
                 />
                 <FeaturedCard
-                    headingBold="Pocmon "
-                    heading="ecosystem"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-                    tags={['NFT', 'Mobile', 'Smartcontracts']}
+                    headingBold="Liminal "
+                    heading="space"
+                    description="Space P2E strategy with built-in marketplace, using NFT mechanics in full spectrum. Mint your own spaceship, equip with engines and weapons of your choice and conquer the outer space!"
+                    tags={['NFT', 'P2E', 'Staking', 'Merging', 'Marketplace']}
                 />
             </div>
         </section>
