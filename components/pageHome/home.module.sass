@@ -26,8 +26,9 @@
 
 .headerWrapper.blockWrapper
   max-width: 1920px
-  padding: 40px 141px 46px 37px
+  padding: 22px 141px 23px 37px
   display: flex
+  align-items: center
   justify-content: space-between
 
 .mainNav__item a:hover
@@ -39,6 +40,7 @@
 
 .mainNav
   margin: 0 auto
+  padding-bottom: 10px
 
 .logo,
 .connectButton,
@@ -80,6 +82,10 @@
 
   .mainNav__list
     padding-left: 0
+
+@media (max-width: 1539px)
+  .mainNav__list li
+    font-size: 24px
 
 @media (max-width: 1023px)
   .mainNav__list li
@@ -218,8 +224,8 @@
 @media (max-width: 1739px)
   .mainScreen:before,
   .mainScreen:after
-    width: 65%
-    height: 65%
+    width: 70%
+    height: 70%
 
   .togetherLink
     font-size: 42px
@@ -237,13 +243,22 @@
     padding-top: 35px
 
   .mainScreen__text
-    margin-bottom: 240px
+    margin-bottom: 140px
 
   .mainScreen__title
     font-size: 80px
 
   .mainScreen__description
     font-size: 18px
+
+  .togetherLink
+    font-size: 36px
+    margin-right: 132px
+
+    &::after
+      transform: scale(0.9)
+      top: -26px
+      right: -130px
 
 @media (max-width: 1399px)
   .mainScreen:before,

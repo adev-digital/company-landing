@@ -2,6 +2,7 @@ import React from 'react'
 import s from './home.module.sass'
 import classNames from 'classnames'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const StickyHeader = () => {
     return (
@@ -9,7 +10,16 @@ const StickyHeader = () => {
             <h1 className={s.visuallyHidden}>
                 NFT & blockchain projects development team
             </h1>
-            <a className={s.logo} href="#">– ANOTHER.DEV</a>
+            <Link href='/'>
+                <a className={s.logo}>
+                    <Image
+                        alt={"ANOTHER.DEV"}
+                        src={'/logo.png'}
+                        height={69}
+                        width={252}
+                    />
+                </a>
+            </Link>
             <nav className={s.mainNav}>
                 <ul className={s.mainNav__list}>
                     <li className={s.mainNav__item}>
