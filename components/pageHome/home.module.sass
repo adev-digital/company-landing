@@ -147,7 +147,7 @@
   padding-top: 55px
   padding-left: 20px
   margin-left: 145px
-  margin-bottom: 353px
+  margin-bottom: 308px
   display: flex
 
 .mainScreen__title
@@ -198,19 +198,24 @@
   &:hover::after
     background: url('../../public/together-icon-hover.svg')
 
+@media (max-width: 1899px)
+  .mainScreen__text
+    flex-direction: column
+    align-items: flex-end
+
+  .mainScreen__title
+    padding-left: unset
+
+  .mainScreen__description
+    text-align: right
+    max-width: 500px
+    padding-right: 8px
+
 @media (max-width: 1839px)
   .mainScreen__title
     font-size: 127px
 
 @media (max-width: 1739px)
-  .mainScreen__text
-    flex-direction: column
-    align-items: flex-end
-
-  .mainScreen__description
-    text-align: right
-    max-width: 500px
-
   .mainScreen::before,
   .mainScreen::after
     width: 82%
@@ -218,13 +223,25 @@
 
   .togetherLink
     font-size: 42px
+    margin-right: 130px
+
+  .mainScreen__text
+    margin-bottom: 510px
 
   .mainScreen__title
     font-size: 90px
 
 @media (max-width: 1539px)
+  .mainScreen:before,
+  .mainScreen:after
+    width: 65%
+    height: 65%
+
   .mainScreen .blockWrapper
     padding-top: 35px
+
+  .mainScreen__text
+    margin-bottom: 310px
 
   .mainScreen__title
     font-size: 80px
@@ -232,28 +249,27 @@
   .mainScreen__description
     font-size: 18px
 
-  .togetherLink
-    margin-right: 130px
-
 @media (max-width: 1399px)
+  .mainScreen:before,
+  .mainScreen:after
+    top: 115px
+    width: 60%
+    height: 60%
+
   .mainScreen__text
     padding-top: 0
-    margin-bottom: 580px
+    margin-bottom: 255px
 
   .mainScreen__title
-    font-size: 70px
-
-  .mainScreen::before,
-  .mainScreen::after
-    top: 160px
+    font-size: 90px
 
 @media (max-width: 1199px)
   .mainScreen__text
-    margin-bottom: 500px
+    margin-bottom: 260px
 
 @media (max-width: 1023px)
   .mainScreen__text
-    margin-bottom: 450px
+    margin-bottom: 260px
     //align-items: center
 
   .mainScreen__title
@@ -263,7 +279,7 @@
 
   .mainScreen__description
     font-size: 16px
-    max-width: 270px
+    max-width: 335px
 
   .togetherLink
     font-size: 30px
@@ -274,12 +290,16 @@
 
 @media (max-width: 899px)
   .mainScreen__text
-    margin-bottom: 420px
+    margin-bottom: 230px
 
   .mainScreen__title
     font-size: 50px
 
 @media (max-width: 767px)
+  .mainScreen:before,
+  .mainScreen:after
+    top: 60px
+
   .mainScreen__text
     margin-left: 67px
     margin-bottom: 293px
@@ -290,7 +310,7 @@
   .mainScreen__description
     font-size: 14px
     line-height: 20px
-    padding: 16px 0 0 0
+    padding: 9px 0 0 0
 
   .blockWrapper
     padding-left: 16px
@@ -307,7 +327,25 @@
       top: -40px
       right: -86px
 
+@media (max-width: 699px)
+  .mainScreen__text
+    margin-bottom: 270px
+
+@media (max-width: 599px)
+  .mainScreen:before,
+  .mainScreen:after
+    top: 120px
+
+  .mainScreen__text
+    margin-bottom: 240px
+
+  .mainScreen__description
+    max-width: 233px
+
 @media (max-width: 499px)
+  .mainScreen__text
+    margin-bottom: 400px
+
   .mainScreen:before,
   .mainScreen:after
     top: 191px
@@ -318,9 +356,30 @@
   .mainScreen__title
     font-size: 42px
 
+  .mainScreen__description
+    max-width: 270px
+
+@media (max-width: 439px)
+  .mainScreen .blockWrapper
+    padding-top: 42px
+
+  .mainScreen__text
+    margin-bottom: 350px
+
 @media (max-width: 399px)
+  .mainScreen__text
+    margin-bottom: 320px
+
   .mainScreen__title
     font-size: 38px
+
+@media (max-width: 389px)
+  .mainScreen__text
+    margin-bottom: 310px
+
+@media (max-width: 379px)
+  .mainScreen__text
+    margin-bottom: 292px
 
 // ----- End-to-end development
 
@@ -433,7 +492,8 @@
 
   .development__description
     font-size: 18px
-    padding-top: 110px
+    padding-top: 28px
+    max-width: 440px
 
   .downLink
     display: none
@@ -446,14 +506,14 @@
     font-size: 70px
 
   .development__description
-    padding-top: 100px
+    padding-top: 7px
 
 @media (max-width: 1199px)
   .development__text
     padding-top: 350px
 
   .development__description
-    padding-top: 90px
+    padding-top: 4px
     font-size: 16px
     max-width: 270px
 
@@ -474,9 +534,16 @@
 @media (max-width: 899px)
   .development__text
     padding-top: 250px
+    margin-bottom: 71px
+    flex-direction: column
+    align-items: flex-start
 
   .development__title
     font-size: 50px
+
+  .development__description
+    text-align: left
+    order: 0
 
 @media (max-width: 767px)
   .development:before
@@ -498,7 +565,7 @@
    font-size: 48px
 
   .development__description
-    padding-top: 60px
+    padding-top: 9px
     font-size: 14px
 
   .infoBlockWrapper
@@ -511,7 +578,6 @@
     font-size: 42px
 
   .development__description
-    padding-top: 10px
     line-height: 20px
     max-width: 256px
 
@@ -532,7 +598,7 @@
   margin-bottom: 71px
 
 .customerFocus__title
-  max-width: 1330px
+  max-width: 900px
   font-family: "Craftwork Grotesk", "Calibri", sans-serif
   font-weight: 400
   line-height: 107%
@@ -613,10 +679,12 @@
 
   .customerFocus__title
     font-size: 80px
+    max-width: 600px
 
   .customerFocus__description
     font-size: 18px
-    padding-top: 110px
+    padding-top: 28px
+    max-width: 440px
 
 @media (max-width: 1399px)
   .customerFocus__title
@@ -626,14 +694,14 @@
     padding-top: 400px
 
   .customerFocus__description
-    padding-top: 100px
+    padding-top: 8px
 
 @media (max-width: 1199px)
   .customerFocus__text
     padding-top: 350px
 
   .customerFocus__description
-    padding-top: 90px
+    padding-top: 8px
 
 @media (max-width: 1023px)
   .customerFocus__text
@@ -652,9 +720,16 @@
 @media (max-width: 899px)
   .customerFocus__text
     padding-top: 240px
+    margin-bottom: 71px
+    flex-direction: column
+    align-items: flex-start
 
   .customerFocus__title
     font-size: 50px
+
+  .customerFocus__description
+    text-align: left
+    order: 0
 
 @media (max-width: 767px)
   .customerFocus:before
@@ -675,7 +750,7 @@
     font-size: 48px
 
   .customerFocus__description
-    padding-top: 6px
+    padding-top: 9px
     font-size: 14px
     line-height: 20px
     max-width: 255px
@@ -765,7 +840,7 @@
     //text-align: left
     max-width: 500px
     padding-left: 0
-    padding-top: 120px
+    padding-top: 142px
     //order: 0
 
   .team::before
@@ -789,7 +864,8 @@
 
   .team__description
     font-size: 18px
-    padding-top: 110px
+    padding-top: 112px
+    max-width: 440px
 
 @media (max-width: 1399px)
   .team__text
@@ -799,14 +875,14 @@
     font-size: 70px
 
   .team__description
-    padding-top: 100px
+    padding-top: 83px
 
 @media (max-width: 1199px)
   .team__text
     padding-top: 250px
 
   .team__description
-    padding-top: 90px
+    padding-top: 82px
 
 @media (max-width: 1023px)
   .team__text
@@ -825,9 +901,16 @@
 @media (max-width: 899px)
   .team__text
     padding-top: 185px
+    margin-bottom: 62px
+    flex-direction: column
+    align-items: flex-start
 
   .team__title
     font-size: 50px
+
+  .team__description
+    text-align: left
+    order: 0
 
 @media (max-width: 767px)
   .team:before
@@ -849,7 +932,7 @@
     max-width: 331px
 
   .team__description
-    padding-top: 17px
+    padding-top: 9px
     font-size: 14px
     line-height: 20px
     max-width: 255px
@@ -868,6 +951,19 @@
   max-width: 1920px
   padding: 124px 40px
   overflow: hidden
+  position: relative
+
+  &::before
+    content: ''
+    position: absolute
+    top: 398px
+    left: 158px
+    background: url('../../public/droids.png')
+    background-repeat: no-repeat
+    width: 100%
+    height: 100%
+    max-width: 415px
+    max-height: 276px
 
 .featuredProjects .blockWrapper
   padding: 42px 0 0
@@ -880,18 +976,6 @@
   position: relative
   display: flex
   padding-left: 10px
-
-  &::before
-    content: ''
-    position: absolute
-    top: 232px
-    left: 118px
-    background: url('../../public/droids.png')
-    background-repeat: no-repeat
-    width: 100%
-    height: 100%
-    max-width: 415px
-    max-height: 276px
 
 .featuredProjects__title
   max-width: 1330px
@@ -943,13 +1027,17 @@
     //flex-direction: column
     //align-items: flex-end
 
+  .featuredProjects:before
+    top: 333px
+
   .featuredProjects__title
     font-size: 90px
     max-width: 800px
 
   .featuredProjects__description
     //text-align: right
-    max-width: 500px
+    max-width: 290px
+    padding-top: 76px
 
   .featuredProjects::before
     width: 82%
@@ -964,6 +1052,7 @@
 
   .featuredProjects__description
     font-size: 18px
+    padding-top: 84px
 
   .featuredProjects__cards
     flex-wrap: wrap
@@ -972,6 +1061,9 @@
 @media (max-width: 1399px)
   .featuredProjects__title
     font-size: 70px
+
+  .featuredProjects__description
+    padding-top: 64px
 
 @media (max-width: 1023px)
   .featuredProjects__text
@@ -988,10 +1080,18 @@
   .featuredProjects__description
     font-size: 16px
     max-width: 270px
+    padding-top: 28px
 
 @media (max-width: 899px)
+  .featuredProjects__text
+    flex-direction: column
+    align-items: flex-end
+
   .featuredProjects__title
     font-size: 50px
+
+  .featuredProjects__description
+    text-align: right
 
 @media (max-width: 767px)
   .featuredProjects
@@ -999,11 +1099,7 @@
     padding-right: 16px
     padding-top: 52px
 
-  .featuredProjects__text
-    padding-right: 0
-    margin-bottom: 40px
-
-  .featuredProjects__text:before
+  .featuredProjects:before
     background: url('../../public/droids-mobile.png')
     background-repeat: no-repeat
     width: 100%
@@ -1011,8 +1107,12 @@
     background-size: contain
     max-width: 130px
     max-height: 86px
-    top: 147px
-    left: -5px
+    top: 247px
+    left: 11px
+
+  .featuredProjects__text
+    padding-right: 0
+    margin-bottom: 40px
 
   .featuredProjects__title
     font-size: 48px
@@ -1020,11 +1120,14 @@
   .featuredProjects__description
     font-size: 14px
     line-height: 20px
-    padding-top: 17px
+    padding-top: 9px
     padding-right: 0
     max-width: 273px
 
 @media (max-width: 499px)
+  .featuredProjects .blockWrapper
+    padding-top: 50px
+
   .featuredProjects__title
     font-size: 42px
 
