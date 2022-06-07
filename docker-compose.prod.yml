@@ -1,8 +1,0 @@
-version: '3.8'
-
-services:
-  frontend:
-    image: registry.bykollab.com/kollab/front:${PROD_VERSION}
-    restart: always
-    ports:
-      - "80:3000"
