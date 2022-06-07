@@ -2,6 +2,6 @@
 .gitlab-ci.yml
 .gitignore
 .dockerignore
-docker-compose.yml
+docker-stack.prod.yml
 docker-stack.yml
 Dockerfile
