@@ -21,21 +21,21 @@ const Home: NextPage = observer((props) => {
             <Head>
               <title>▷▢  Another.DEV – Blockchain Development Services</title>
               <meta name='description' content='We offer a wide range of blockchain, NFT and cryptocurrencies solutions development and creative services (incl. DApps, marketplaces, NFT collections, DeFi, P2E games, wallets and more)'/>
-              <script
-                async
-                src="https://www.googletagmanager.com/gtag/js?id=G-S24Y5DC7HX"
-              />
-              <script
-                dangerouslySetInnerHTML={{
-                  __html: `
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
+            {/*  <script*/}
+            {/*    async*/}
+            {/*    src="https://www.googletagmanager.com/gtag/js?id=G-S24Y5DC7HX"*/}
+            {/*  />*/}
+            {/*  <script*/}
+            {/*    dangerouslySetInnerHTML={{*/}
+            {/*      __html: `*/}
+            {/*        window.dataLayer = window.dataLayer || [];*/}
+            {/*        function gtag(){dataLayer.push(arguments);}*/}
+            {/*        gtag('js', new Date());*/}
 
-                    gtag('config', 'G-S24Y5DC7HX');
-            `,
-                }}
-              />
+            {/*        gtag('config', 'G-S24Y5DC7HX');*/}
+            {/*`,*/}
+            {/*    }}*/}
+            {/*  />*/}
             </Head>
             <StickyHeader />
             <MainScreen />
