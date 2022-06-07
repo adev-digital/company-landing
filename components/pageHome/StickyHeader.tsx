@@ -10,8 +10,8 @@ const StickyHeader = () => {
             <h1 className={s.visuallyHidden}>
                 NFT & blockchain projects development team
             </h1>
-            <Link href='/'>
-                <a className={s.logo}>
+            <Link href='#'>
+                <a href='#' className={s.logo}>
                     <Image
                         alt={"ANOTHER.DEV"}
                         src={'/logo.png'}

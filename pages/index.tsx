@@ -23,7 +23,7 @@ const Home: NextPage = observer((props) => {
               <meta name='description' content='We offer a wide range of blockchain, NFT and cryptocurrencies solutions development and creative services (incl. DApps, marketplaces, NFT collections, DeFi, P2E games, wallets and more)'/>
               <script
                 async
-                src="https://www.googletagmanager.com/gtag/js?id=G-S24Y5DC7HX%22%3E"
+                src="https://www.googletagmanager.com/gtag/js?id=G-S24Y5DC7HX"
               />
               <script
                 dangerouslySetInnerHTML={{
