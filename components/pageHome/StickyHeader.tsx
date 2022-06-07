@@ -29,8 +29,11 @@ const StickyHeader = () => {
                         <Link href='#projects'>projects</Link>
                     </li>
                     <li className={s.mainNav__item}>
-                        <a href="#">dao <span>soon</span></a>
+                        <Link href="mailto:another.dev.info@gmail.com">contact us</Link>
                     </li>
+                    {/*<li className={s.mainNav__item}>*/}
+                    {/*    <Link href="#">dao <span>soon</span></Link>*/}
+                    {/*</li>*/}
                 </ul>
             </nav>
             {/*<button className={s.connectButton} type="button">connect wallet</button>*/}

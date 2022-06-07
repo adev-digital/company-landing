@@ -1,10 +1,11 @@
 import React from 'react'
 import s from './home.module.sass'
 import classNames from 'classnames'
+import Link from "next/link";
 
 const CustomerFocus = () => {
     return (
-        <section className={classNames(s.customerFocus, s.container)}>
+        <section className={classNames(s.customerFocus, s.container)} id="customerFocus">
             <div className={s.infoBlockWrapper}>
                 <div className={s.customerFocus__text}>
                     <h2 className={s.customerFocus__title}>
@@ -21,7 +22,9 @@ const CustomerFocus = () => {
                         result,&nbsp;confirmed by specification.
                     </p>
                 </div>
-                <a className={s.downLink} href="#"></a>
+                <Link href="#team">
+                    <a className={s.downLink}></a>
+                </Link>
             </div>
         </section>
     )

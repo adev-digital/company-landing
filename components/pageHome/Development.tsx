@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './home.module.sass'
 import classNames from 'classnames'
+import Link from "next/link"
 
 const Development = () => {
     return (
@@ -19,7 +20,9 @@ const Development = () => {
                         go fast.
                     </p>
                 </div>
-                <a className={s.downLink} href="#"></a>
+                <Link href="#customerFocus">
+                    <a className={s.downLink}></a>
+                </Link>
             </div>
         </section>
     )

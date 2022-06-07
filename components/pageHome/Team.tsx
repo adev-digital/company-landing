@@ -1,10 +1,11 @@
 import React from 'react'
 import s from './home.module.sass'
 import classNames from 'classnames'
+import Link from "next/link";
 
 const Team = () => {
     return (
-        <section className={classNames(s.team, s.container)}>
+        <section className={classNames(s.team, s.container)} id="team">
             <div className={s.infoBlockWrapper}>
                 <div className={s.team__text}>
                     <h2 className={s.team__title}>
@@ -18,7 +19,9 @@ const Team = () => {
                         <strong>structure and visibility of our work.</strong>
                     </p>
                 </div>
-                <a className={s.downLink} href="#"></a>
+                <Link href="#projects">
+                    <a className={s.downLink}></a>
+                </Link>
             </div>
         </section>
     )
