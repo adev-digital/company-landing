@@ -1,7 +1,6 @@
 stages:
   - build
-  - deploy-test
-  - deploy-prod
+  - deploy
 
 docker-build:
   # Use the official docker image.
@@ -32,8 +31,20 @@ docker-build:
       exists:
         - Dockerfile
 
+approve:
+  stage: build
+  script:
+    - echo "This build will be deployed on production"
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      exists:
+        - docker-stack.prod.yml
+      when: manual
+
 portainer-deploy:
-  stage: deploy-test
+  stage: deploy
+  needs:
+    - docker-build
   image: registry.bykollab.com/kollab/infra/gitlab-portainer-deploy:latest
   variables:
     PORTAINER_STACK_NAME: "${CI_PROJECT_NAMESPACE}_${CI_PROJECT_NAME}"
@@ -48,7 +59,10 @@ portainer-deploy:
         - docker-stack.yml
 
 production-deploy:
-  stage: deploy-prod
+  stage: deploy
+  needs:
+    - docker-build
+    - approve
   image: registry.bykollab.com/kollab/infra/gitlab-portainer-deploy:latest
   environment:
     name: production
@@ -65,4 +79,3 @@ production-deploy:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
       exists:
         - docker-stack.prod.yml
-      when: manual
