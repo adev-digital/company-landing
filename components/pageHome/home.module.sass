@@ -128,7 +128,7 @@
     content: ""
     position: absolute
     top: 34px
-    left: 0
+    left: -60px
     background: url('../../public/girl.png')
     background-repeat: no-repeat
     width: 100%
@@ -141,7 +141,7 @@
     content: ""
     position: absolute
     top: 34px
-    left: 0
+    left: -60px
     background: url('../../public/girl-bg.png')
     background-repeat: no-repeat
     width: 100%
@@ -155,12 +155,13 @@
   padding-top: 55px
   padding-left: 20px
   margin-left: 145px
-  margin-bottom: 308px
+  margin-bottom: 336px
   display: flex
 
 .mainScreen__title
   max-width: 1376px
-  padding-left: 240px
+  //padding-left: 240px
+  padding-left: 198px
   text-align: right
   font-family: "Craftwork Grotesk", "Calibri", sans-serif
   font-weight: 400
@@ -177,7 +178,8 @@
   line-height: 140%
   letter-spacing: -0.01em
   color: #222020
-  padding: 52px 0 0 60px
+  //padding: 52px 0 0 60px
+  padding: 52px 0 0 20px
   font-family: "Helvetica", sans-serif
 
 .togetherLink
@@ -207,6 +209,10 @@
     background: url('../../public/together-icon-hover.svg')
 
 @media (max-width: 1899px)
+  .mainScreen::before,
+  .mainScreen::after
+    left: 0
+
   .mainScreen__text
     flex-direction: column
     align-items: flex-end
@@ -645,7 +651,8 @@
   content: ''
   position: absolute
   top: 50px
-  right: 30px
+  //right: 30px
+  right: 40px
   width: 100%
   height: 100%
   background: url('../../public/owl.png')
@@ -801,8 +808,10 @@
 .team:before
   content: ''
   position: absolute
-  top: 0
-  right: 30px
+  //top: 0
+  //right: 30px
+  top: 66px
+  right: 40px
   width: 100%
   height: 100%
   background: url('../../public/raven.png')
