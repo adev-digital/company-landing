@@ -76,8 +76,8 @@
     vertical-align: text-top
 
 .logo
-  width: 252px
-  height: 69px
+  width: 313px
+  height: 89px
 
 @media (max-width: 1399px)
   .headerWrapper.blockWrapper
@@ -1065,7 +1065,7 @@
     font-size: 127px
 
 @media (max-width: 1739px)
-  .featuredProjects__text
+  //.featuredProjects__text
     //flex-direction: column
     //align-items: flex-end
 
@@ -1096,16 +1096,16 @@
     font-size: 18px
     padding-top: 84px
 
-  .featuredProjects__cards
-    flex-wrap: wrap
-    justify-content: center
-
 @media (max-width: 1399px)
   .featuredProjects__title
     font-size: 70px
 
   .featuredProjects__description
     padding-top: 64px
+
+  .featuredProjects__cards
+    flex-wrap: wrap
+    justify-content: center
 
 @media (max-width: 1023px)
   .featuredProjects__text
@@ -1142,6 +1142,9 @@
     padding-right: 16px
     padding-top: 52px
 
+  .featuredProjects.container
+    padding-bottom: 85px
+
   .featuredProjects:before
     background: url('../../public/droids-mobile.png')
     background-repeat: no-repeat
@@ -1177,3 +1180,78 @@
 @media (max-width: 399px)
   .featuredProjects__title
     font-size: 38px
+
+// ----- Footer
+
+.footer__wrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 0 20px
+
+.bookConsulting
+  margin-bottom: 155px
+  padding: 20px 66px
+  font-family: "Craftwork Grotesk", "Calibri", sans-serif
+  font-style: normal
+  font-weight: 600
+  font-size: 24px
+  line-height: 30px
+  text-align: center
+  color: #FFFFFF
+  background-color: #84658D
+  box-shadow: 0 0 20.7738px #84658D, 0 0 11.8707px #84658D, 0 0 6.92459px #84658D, 0 0 3.46229px #84658D, 0 0 0.989227px #84658D, 0 0 0.494614px #84658D
+  border-radius: 30px
+  border: 1px solid #84658D
+
+.bookConsulting:hover,
+.bookConsulting:focus
+  color: #84658D
+  background-color: #FFFFFF
+
+.bookConsulting:active
+  opacity: 0.7
+
+.social__list
+  display: flex
+  padding: 0
+  margin-bottom: 55px
+
+.social__item
+  margin-right: 22px
+
+.social__item:last-child
+  margin-right: 0
+
+.social__item a:hover,
+.social__item a:focus
+  opacity: 0.7
+
+.social__item a:active
+  opacity: 0.5
+
+.footer__text
+  margin-bottom: 45px
+  font-style: normal
+  font-weight: 400
+  font-size: 18px
+  line-height: 23px
+  color: #222020
+
+@media (max-width: 767px)
+  .bookConsulting
+    padding: 10px 55px
+    font-size: 16px
+    margin-bottom: 85px
+
+@media (max-width: 499px)
+  .bookConsulting
+    padding: 7px 50px
+    font-size: 14px
+    margin-bottom: 75px
+
+@media (max-width: 399px)
+  .bookConsulting
+    padding: 5px 45px
+    font-size: 12px
+    margin-bottom: 65px

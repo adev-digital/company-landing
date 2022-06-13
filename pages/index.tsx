@@ -8,6 +8,7 @@ import Development from '../components/pageHome/Development'
 import CustomerFocus from '../components/pageHome/CustomerFocus'
 import Team from '../components/pageHome/Team'
 import FeaturedProjects from '../components/pageHome/FeaturedProjects'
+import Footer from '../components/pageHome/Footer'
 import { UserStore } from '../stores/UserStore'
 import s from './home.module.sass'
 import Head from "next/head"
@@ -43,6 +44,7 @@ const Home: NextPage = observer((props) => {
             <CustomerFocus />
             <Team />
             <FeaturedProjects />
+            <Footer />
         </div>
     )
 })

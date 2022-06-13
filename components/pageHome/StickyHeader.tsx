@@ -14,9 +14,9 @@ const StickyHeader = () => {
                 <a href='#' className={s.logo}>
                     <Image
                         alt={"ANOTHER.DEV"}
-                        src={'/logo.png'}
-                        height={69}
-                        width={252}
+                        src={'/logo.svg'}
+                        height={89}
+                        width={313}
                     />
                 </a>
             </Link>
@@ -29,7 +29,7 @@ const StickyHeader = () => {
                         <Link href='#projects'>projects</Link>
                     </li>
                     <li className={s.mainNav__item}>
-                        <Link href="mailto:another.dev.info@gmail.com">contact us</Link>
+                        <Link href="#footer">contact us</Link>
                     </li>
                     {/*<li className={s.mainNav__item}>*/}
                     {/*    <Link href="#">dao <span>soon</span></Link>*/}
