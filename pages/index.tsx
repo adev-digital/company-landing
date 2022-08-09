@@ -22,6 +22,7 @@ const Home: NextPage = observer((props) => {
             <Head>
               <title>▷▢  Another.DEV – Blockchain Development Services</title>
               <meta name='description' content='We offer a wide range of blockchain, NFT and cryptocurrencies solutions development and creative services (incl. DApps, marketplaces, NFT collections, DeFi, P2E games, wallets and more)'/>
+              <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
             {/*  <script*/}
             {/*    async*/}
             {/*    src="https://www.googletagmanager.com/gtag/js?id=G-S24Y5DC7HX"*/}
