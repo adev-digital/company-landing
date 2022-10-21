@@ -26,7 +26,7 @@ const Footer: FC = observer(({ }) => {
                         </a>
                     </li>
                     <li className={s.social__item}>
-                        <a href='https://twitter.com/another_dev_eth' target='_blank'>
+                        <a href='https://twitter.com/adev_co' target='_blank'>
                             <Image
                                 alt={"Another dev twitter account"}
                                 src={'/twitter.svg'}
