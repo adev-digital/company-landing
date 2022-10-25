@@ -5,6 +5,8 @@ import { RootStore } from '../stores/RootStore'
 import { Provider } from 'inversify-react'
 import { ModalsContainer, ModalsEnum } from '../modals'
 import ReactGA from "react-ga"
+import Script from "next/script"
+
 ReactGA.initialize('G-S24Y5DC7HX')
 
 const rootStore = new RootStore()
