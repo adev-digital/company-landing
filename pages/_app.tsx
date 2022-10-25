@@ -22,10 +22,33 @@ function MyApp({ Component, pageProps }: AppProps) {
     }, [])
 
     return (
+        <>
+        <Script
+                  src="https://www.googletagmanager.com/gtag/js?id=G-S24Y5DC7HX"
+                  strategy="afterInteractive"
+                />
+        <Script
+                  id="gtag-init"
+                  strategy="afterInteractive"
+                  dangerouslySetInnerHTML={{
+                    __html: `
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+                      gtag('config', 'G-S24Y5DC7HX',{
+                    page_path: window.location.pathname,
+                  });
+                    `}}
+                />
+
+        
+        
         <Provider container={container}>
             <Component {...pageProps} />
             <ModalsContainer />
         </Provider>
+        </>
+
     )
 }
 
