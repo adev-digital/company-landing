@@ -27,7 +27,7 @@ const Home: NextPage = observer((props) => {
                   src="https://www.googletagmanager.com/gtag/js?id=G-S24Y5DC7HX"
                   strategy="afterInteractive"
                 />
-                <Script>
+                {/* <Script>
                   {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){window.dataLayer.push(arguments);}
@@ -35,7 +35,22 @@ const Home: NextPage = observer((props) => {
 
                     gtag('config', 'G-S24Y5DC7HX');
                   `}
-                </Script>
+                </Script> */}
+
+                <Script
+                  id="gtag-init"
+                  strategy="afterInteractive"
+                  dangerouslySetInnerHTML={{
+                    __html: `
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+                      gtag('config', 'G-S24Y5DC7HX',{
+                    page_path: window.location.pathname,
+                  });
+                    `}}
+                />
+
             </Head>
             <StickyHeader />
             <MainScreen />
